@@ -47,21 +47,21 @@
 // COMMONS STYLESHEET
 //==================================================================
 .clearfix {
-	.clearfix();	// Reuse Mixin .clearfix() from mixins.less of bootstrap
+  .ui-clearfix();	// Reuse Mixin .clearfix() from mixins.less of bootstrap
 }
 
 // Block level inputs
 .input-block-level{
-	.input-block-level();
+  .ui-input-block-level();
 }
 
 /*============== Action With Label================*/
 .uiActionWithLabel {
-	.uiActionWithLabel();
+  .ui-ActionWithLabel();
 }
 /*============== actionIcon================*/
 .actionContainer{
-	.actionContainer();
+  .ui-actionContainer();
 }
 
 a,a:hover,a:focus {
@@ -70,7 +70,7 @@ a,a:hover,a:focus {
 }
 
 table {
-	width: 100%;
+  width: 100%;
 }
 
 // Dropdown menus
@@ -99,255 +99,255 @@ table {
 /***************badge*********************/
 
 .badge {
-	background: @borderColor;
-	border-radius: 9px 9px 9px 9px;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37) inset, 1px 1px 0 rgba(255, 255, 255, 0.8);
-	color: @primaryColor;
-	font-size: 11px;
-	padding-left: 7px;
-	padding-right: 7px;
+  background: @borderColor;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37) inset, 1px 1px 0 rgba(255, 255, 255, 0.8);
+  color: @primaryColor;
+  font-size: 11px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 /*************** multiValueContainer *********************/
 
 .multiValueContainer {
-	float: left;
-	li {
-		margin-bottom: 12px;
+  float: left;
+  li {
+    margin-bottom: 12px;
 
-		[class^="uiIcon"] {
-			cursor: pointer;
-		}
-		input{
-			margin-right: 5px;
-		}
-	}
+    [class^="uiIcon"] {
+      cursor: pointer;
+    }
+    input{
+      margin-right: 5px;
+    }
+  }
 
-	li:last-child {
-		margin-bottom: 0px;
-	}
+  li:last-child {
+    margin-bottom: 0px;
+  }
 
 }
 
 /*************** AjaxLoadingMask *********************/
 .ajaxLoadingMask{
-	background: @globalLoadingBackground;
-	border: 1px solid @globalLoadingBorder;
-	border-radius: 0 0 3px 3px;
-	.box-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
-	padding: 10px 7px 6px 11px;
-	top: 0px !important;
-	position: fixed !important;
-	.loadingProgressBar{
-		background: url("@{images-path}/Loading/loadingProgressBar.gif") no-repeat center;
-		width: 20px;
-		height: 20px;
-	}
-	.loadingText{
-		margin: 0 34px 0 40px;
-		color: @globalLoadingColor;
-		font-weight: bold;
-	}
-	.uiIconClose:hover{
-		background: url("@{images-path}/Icons/uiIconsSecondary.png") -160px -100px!important;
-		cursor: pointer;
-	}
+  background: @globalLoadingBackground;
+  border: 1px solid @globalLoadingBorder;
+  border-radius: 0 0 3px 3px;
+  .box-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+  padding: 10px 7px 6px 11px;
+  top: 0px !important;
+  position: fixed !important;
+  .loadingProgressBar{
+    background: url("@{images-path}/Loading/loadingProgressBar.gif") no-repeat center;
+    width: 20px;
+    height: 20px;
+  }
+  .loadingText{
+    margin: 0 34px 0 40px;
+    color: @globalLoadingColor;
+    font-weight: bold;
+  }
+  .uiIconClose:hover{
+    background: url("@{images-path}/Icons/uiIconsSecondary.png") -160px -100px!important;
+    cursor: pointer;
+  }
 }
 
 /***********************************/
 
 .uiAccessGroup {
-	padding: 10px;
-	.form-horizontal .control-group .control-label {
-		width: 400px;
-	}
-	.form-horizontal .control-group .controls {
-		margin-left: 405px;
-	}
+  padding: 10px;
+  .form-horizontal .control-group .control-label {
+    width: 400px;
+  }
+  .form-horizontal .control-group .controls {
+    margin-left: 405px;
+  }
 }
 
 .controls-nowrap{
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .UICLVPortlet{
-	.checkListSetting{
-		padding: 15px 10px 10px 85px;
-		li{
-			margin-right: 50px;
-		}
-	}
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-		.uiCheckbox {
-			padding: 0px 8px;
-		}
-	}
-	#clvContentTab-tab .controls{
-		.uiSelectbox {
-			width: 131px;
-			.selectbox{ width: 131px;}
-		}
-	}
-	.form-horizontal {
-		.control-group {
-			.controls {
-				input{
-					width: 270px;
-				}
-				.uiCheckbox input{
-					width: auto;
-				}
-				.uiRadio input{
-					width: auto;
-				}
-			}
-		}
-	}
+  .checkListSetting{
+    padding: 15px 10px 10px 85px;
+    li{
+      margin-right: 50px;
+    }
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .uiCheckbox {
+      padding: 0px 8px;
+    }
+  }
+  #clvContentTab-tab .controls{
+    .uiSelectbox {
+      width: 131px;
+      .selectbox{ width: 131px;}
+    }
+  }
+  .form-horizontal {
+    .control-group {
+      .controls {
+        input{
+          width: 270px;
+        }
+        .uiCheckbox input{
+          width: auto;
+        }
+        .uiRadio input{
+          width: auto;
+        }
+      }
+    }
+  }
 
 }
 
 .UISingleContentViewerPortlet{
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-		.uiCheckbox {
-			padding: 0px 8px;
-		}
-	}
-	.uiContentSearchForm{
-		.form-horizontal{
-			.uiRadio{
-				width: 19px;
-			}
-		}
-	}
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .uiCheckbox {
+      padding: 0px 8px;
+    }
+  }
+  .uiContentSearchForm{
+    .form-horizontal{
+      .uiRadio{
+        width: 19px;
+      }
+    }
+  }
 
-	.form-horizontal{
-		li{
-			margin-left: 50px;
-		}
+  .form-horizontal{
+    li{
+      margin-left: 50px;
+    }
 
-		.uiRadio{
-			width: 190px;
-			margin-left: 15px;
-		}
+    .uiRadio{
+      width: 190px;
+      margin-left: 15px;
+    }
 
-		.control-group{
-			margin-bottom: 20px;
-		}
+    .control-group{
+      margin-bottom: 20px;
+    }
 
-		.controls-full .scv-by {
-			line-height: 28px;
+    .controls-full .scv-by {
+      line-height: 28px;
       margin: 0px 5px 0px 15px;
-		}
-	}
+    }
+  }
 }
 
 /*================================*/
 
 .UIForm{
-	.UIPDFViewerContainer {
-		min-width: 530px;
-		.PDFViewerBar {
-			.ControlButton {
-                color: #333; //fix code
-				.PageNumber input{
-					border: 1px solid @borderColor;
-					text-align: center;
-					width: 30px; height: 20px;
-				}
-				.uiSelectbox, select.selectbox{
-					width: 75px;
-					height: 22px;
-				}
-				.uiSelectbox{
-					margin-top: -4px;
-				}
-			}
-		}
-	}
+  .UIPDFViewerContainer {
+    min-width: 530px;
+    .PDFViewerBar {
+      .ControlButton {
+        color: #333; //fix code
+        .PageNumber input{
+          border: 1px solid @borderColor;
+          text-align: center;
+          width: 30px; height: 20px;
+        }
+        .uiSelectbox, select.selectbox{
+          width: 75px;
+          height: 22px;
+        }
+        .uiSelectbox{
+          margin-top: -4px;
+        }
+      }
+    }
+  }
 }
 
 .actionIcon, .actionIconSmall{
-	.actionIcon();
+  .ui-actionIcon();
 }
 
 .actionIconSmall {
-	padding: 0;
+  padding: 0;
   line-height: @baseLineHeight - 4;
-	[class^="uiIcon"] {
-		vertical-align: middle;
-	}
+  [class^="uiIcon"] {
+    vertical-align: middle;
+  }
 }
 
 /*============== error, noticeEmpty ================*/
 .error,
 .noticeEmpty {
-  .error();
+  .ui-error();
 }
 .noticeEmpty {
-  .noticeEmpty();
+  .ui-noticeEmpty();
 }
 
 /*======== Title================*/
 .titleWithBorder {
-	.titleWithBorder();
+  .ui-titleWithBorder();
 }
 
 /******uibox*****/
 .uiBox {
-	.uiBox();
+ .ui-Box();
 }
 
 /*============== Gray Light Box================*/
 .uiGrayLightBox{
-	.uiGrayLightBox();
+  .ui-GrayLightBox();
 }
 .center {
-	.center();
+  .text-center();
 }
 
 /******avatar*****/
 .avatarCircle {
-  .avatarCircle();
+  .ui-avatarCircle();
 }
 
 .avatarXLarge {
-  .avatarXLarge();
+  .ui-avatarXLarge();
 }
 
 .avatarLarge {
-  .avatarLarge();
+  .ui-avatarLarge();
 }
 
 .avatarXMedium {
-  .avatarXMedium();
+  .ui-avatarXMedium();
 }
 
 .avatarMedium {
-  .avatarMedium();
+  .ui-avatarMedium();
 }
 
 .avatarXSmall {
-  .avatarXSmall();
+  .ui-avatarXSmall();
 }
 
 .avatarSmall {
-  .avatarSmall();
+  .ui-avatarSmall();
 }
 
 .avatarMini {
-  .avatarMini();
+  .ui-avatarMini();
 }
 
 .avatarTiny {
-  .avatarTiny()
+  .ui-avatarTiny();
 }
 
 .avatarLargeWithBorder {
-  .avatarLargeWithBorder();
+  .ui-avatarLargeWithBorder();
 }
 
 .avatarXLargeWithBorder {
-  .avatarXLargeWithBorder();
+  .ui-avatarXLargeWithBorder();
 }
 /*
 Round corner box with title
@@ -361,81 +361,81 @@ Round corner box with title
     + round corner at the bottom-left and bottom-right
 */
 .roundCornerBoxWithTitle{
-	.roundCornerBoxWithTitle();
+  .ui-roundCornerBoxWithTitle();
 }
 
 /************ mask layer **********/
 .UIMaskWorkspace {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: solid 8px #c5c5c5;
-	width: 650px;
-	-moz-box-shadow: 0px 0px 5px #909090;
-	-webkit-box-shadow: 0px 0px 5px #909090;
-	box-shadow: 0px 0px 5px #909090;
-	background: #c5c5c5;
-	.form-horizontal {
-		padding-top: 0;
-		padding-bottom: 5px;
-		.control-group {
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-	.uiAccessGroup {
-		padding: 0;
-	}
-	.uiDashboardPortlet {
-		padding: 0 0 15px;
-	}
-	.resizable {
-		margin: -15px;
-		padding: 15px;
-	}
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 8px #c5c5c5;
+  width: 650px;
+  -moz-box-shadow: 0px 0px 5px #909090;
+  -webkit-box-shadow: 0px 0px 5px #909090;
+  box-shadow: 0px 0px 5px #909090;
+  background: #c5c5c5;
+  .form-horizontal {
+    padding-top: 0;
+    padding-bottom: 5px;
+    .control-group {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .uiAccessGroup {
+    padding: 0;
+  }
+  .uiDashboardPortlet {
+    padding: 0 0 15px;
+  }
+  .resizable {
+    margin: -15px;
+    padding: 15px;
+  }
 }
 
 .UIMaskWorkspace .MaskContainer {
-	background: @primaryBackgroundLight;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	padding: 10px;
-	.uiAction.uiActionBorder {
-		padding-bottom: 0;
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-	.uiBox {
-		margin-bottom: 15px;
-		.uiContentBox {
-			padding: 15px;
-			+ .uiAction.uiActionBorder {
-				margin-left: 0;
-				margin-right: 0;
-			}
-		}
-	}
+  background: @primaryBackgroundLight;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  .uiAction.uiActionBorder {
+    padding-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .uiBox {
+    margin-bottom: 15px;
+    .uiContentBox {
+      padding: 15px;
+      + .uiAction.uiActionBorder {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .UIVirtualList {
-	margin-bottom: 15px;
-	.table {
-		margin-bottom: 0;
-	}
+  margin-bottom: 15px;
+  .table {
+    margin-bottom: 0;
+  }
 }
 
 .MaskLayer {
-	background: black;
-	text-align: center;
-	position: absolute;
-	overflow: auto; /* Fix for FF2 */
+  background: black;
+  text-align: center;
+  position: absolute;
+  overflow: auto; /* Fix for FF2 */
 }
 
 .uiHelpPLFToolbarPortlet .tooltip {
-	right: 0px !important;
-	left: auto !important;
+  right: 0px !important;
+  left: auto !important;
 }
 
 .uiGrayLightBox label {
@@ -480,45 +480,45 @@ Round corner box with title
 
 // Footer WLC
 .footerWLC {
-    bottom: 0;
-    color: #FFFFFF;
+  bottom: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 6px 0;
+  .btn {
     font-weight: bold;
-    left: 0;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    padding: 6px 0;
-    .btn {
-        font-weight: bold;
-        margin-left: 12px;
-      line-height: 16px;
-      .buttonBackground(rgba(255, 255, 255, 0.3), rgba(180, 180, 180, 0.3), #333333, 0 0 0 transparent);
-      border: none;
-      .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+    margin-left: 12px;
+    line-height: 16px;
+    .buttonBackground(rgba(255, 255, 255, 0.3), rgba(180, 180, 180, 0.3), #333333, 0 0 0 transparent);
+    border: none;
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+  }
+  .btn:hover  {
+    color: @linkColor;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .btn:active {
+    color: @linkColor;
+    .box-shadow(~"inset 0 3px 8px rgba(0, 0, 0, 0.2),1px 1px 0 rgba(255, 255, 255, 0.4)");
+  }
+  & > form {
+    font-size: 14px;
+    font-weight: bold;
+    button {
+      font-size: 13px;
     }
-    .btn:hover  {
-        color: @linkColor;
-      background-position: center;
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-    .btn:active {
-      color: @linkColor;
-      .box-shadow(~"inset 0 3px 8px rgba(0, 0, 0, 0.2),1px 1px 0 rgba(255, 255, 255, 0.4)");
-    }
-    & > form {
-        font-size: 14px;
-        font-weight: bold;
-        button {
-            font-size: 13px;
-        }
-    }
-	&.backOutdated {
-      background: rgba(212, 0, 0, 0.4);
+  }
+  &.backOutdated {
+    background: rgba(212, 0, 0, 0.4);
 
-	}
-	&.backNotOutdated {
-      background: rgba(0, 0, 0, 0.4);
-	}
+  }
+  &.backNotOutdated {
+    background: rgba(0, 0, 0, 0.4);
+  }
 }
 /* Create Margin and Padding Utilities Class */
 .marginAndPadding(20);
@@ -539,43 +539,43 @@ hr {
   border: 1px solid @borderColor;
   margin-bottom: 15px;
   .border-radius(@baseBorderRadius);
-    .accordion-heading{
-      background-color: @primaryBackground;
-      border-bottom: 1px solid @borderColor;
-      border-top: 1px solid @borderColor;
-      &:first-child {
-        border-top: none;
-      }
-      .box-shadow(0 0 3px 0 rgba(0, 0, 0, 0.1));
-      &:hover,&.open,&.active {
-        background-color: @primaryBackgroundLight
-      }
-      > * {
-        padding: 6px 20px 6px 20px;
+  .accordion-heading{
+    background-color: @primaryBackground;
+    border-bottom: 1px solid @borderColor;
+    border-top: 1px solid @borderColor;
+    &:first-child {
+      border-top: none;
+    }
+    .box-shadow(0 0 3px 0 rgba(0, 0, 0, 0.1));
+    &:hover,&.open,&.active {
+      background-color: @primaryBackgroundLight
+    }
+    > * {
+      padding: 6px 20px 6px 20px;
+    }
+  }
+  .accordion-body {
+    > * {
+      background:@baseBackground ;
+      padding: 6px 20px 6px 20px;
+    }
+    &:hover {
+      > td,> *  {
+        #gradient > .vertical(@primaryBackground, @primaryBackgroundLight);
       }
     }
-    .accordion-body {
-      > * {
-        background:@baseBackground ;
-        padding: 6px 20px 6px 20px;
-      }
-      &:hover {
-        > td,> *  {
-          #gradient > .vertical(@primaryBackground, @primaryBackgroundLight);
-        }
-      }
+  }
+  .accordion-active {
+    > * {
+      #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
     }
-    .accordion-active {
-      > * {
+    &:hover {
+      > td,> *  {
         #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
       }
-      &:hover {
-        > td,> *  {
-          #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
-        }
-      }
-      color: @btnPrimaryColor;
     }
+    color: @btnPrimaryColor;
+  }
 }
 
 //uiAutoComplete
@@ -598,10 +598,9 @@ hr {
     }
     &:hover,&.selected {
       #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 15%));
-        * {
-          color: @dropdownLinkColorHover;
-        }
+      * {
+        color: @dropdownLinkColorHover;
+      }
     }
   }
 }
-
